@@ -2,8 +2,8 @@
 
 function theme() {
 	let now = new Date();
-	hours = now.getHours();
-	if (hours > 12 || hours < 8) {
+	hours = now.getSeconds();
+	if (hours < 30) {
 		let navbar = document.getElementById('navbar');
 		navbar.classList.remove('navbar-light');
 		navbar.classList.add('navbar-dark-bg');
